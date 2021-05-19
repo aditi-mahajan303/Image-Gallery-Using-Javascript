@@ -4,60 +4,62 @@
     <link rel="stylesheet" href="style.css">
     
     </head>
-<body>
-    <div id="img-box" class ="full">
+    <body>
+        <div id="img-box" class ="full">
         
-        <div class ="shadow1"></div>
-        <div class ="shadow2"></div>
+            <div class ="shadow1"></div>
+            <div class ="shadow2"></div>
         
-    <img src="http://atlantaworldtravels.com/beta/wp-content/themes/atlanta/images/international-tour.jpg" id="smallimg">
-    </div>
-    <div class="imageList">
-        <ul>
-        <li onclick = "onMenu()">TOURIST PLACES</li>
-        <li onclick = "onKarnataka()">KARNATAKA</li>
-        <li onclick = "onMaharashtra()">MAHARASHTRA</li>
-        <li onclick = "onHyderabad()">HYDERABAD</li>
-        <li onclick = "onGujarat()">GUJARAT</li>
-        </ul>
-    </div>
-    <div class="btn-box" onclick="imageSize()">
-    <span id="btnIcon"> &#9776;</span>
-    </div>
-    <script> 
-        var smallImg = document.getElementById("smallimg");
-        var imgBox = document.getElementById("img-box");
-        var menuIcon = document.getElementById("btnIcon");
-        function onMenu(){
-            smallImg.src="http://atlantaworldtravels.com/beta/wp-content/themes/atlanta/images/international-tour.jpg"
-        }
-        function onKarnataka(){
-              smallImg.src="https://img.traveltriangle.com/blog/wp-content/uploads/2019/04/Places-To-Visit-In-Summer-In-Karnataka-cover.jpg";         
+            <img src="http://atlantaworldtravels.com/beta/wp-content/themes/atlanta/images/international-tour.jpg" id="smallimg">
+        </div>
+        <div class="imageList">
+            <ul>
+                <li onclick = "onMenu()">TOURIST PLACES</li>
+                <li onclick = "onKarnataka()">KARNATAKA</li>
+                <li onclick = "onMaharashtra()">MAHARASHTRA</li>
+                <li onclick = "onHyderabad()">HYDERABAD</li>
+                <li onclick = "onGujarat()">GUJARAT</li>
+            </ul>
+        </div>
+        <div class="btn-box" onclick="imageSize()">
+            <span id="btnIcon"> &#9776;</span>
+        </div>
+        <script> 
+            var smallImg = document.getElementById("smallimg");
+            var imgBox = document.getElementById("img-box");
+            var menuIcon = document.getElementById("btnIcon");
+            function onMenu(){
+                smallImg.src="http://atlantaworldtravels.com/beta/wp-content/themes/atlanta/images/international-tour.jpg"
+            }
+            function onKarnataka(){
+                smallImg.src="https://img.traveltriangle.com/blog/wp-content/uploads/2019/04/Places-To-Visit-In-Summer-In-Karnataka-cover.jpg";         
             
-        }
-        function onMaharashtra(){
-              smallImg.src="https://cdn.britannica.com/87/149587-050-C40B2AB8/Gateway-of-India-Mumbai.jpg";         
+            }
+            function onMaharashtra(){
+                smallImg.src="https://cdn.britannica.com/87/149587-050-C40B2AB8/Gateway-of-India-Mumbai.jpg";         
             
-        }
-        function onHyderabad(){
-              smallImg.src="https://m.economictimes.com/thumb/msid-71771669,width-1200,height-900,resizemode-4,imgsize-257346/hyderabad-getty.jpg";         
+            }
+            function onHyderabad(){
+                smallImg.src="https://m.economictimes.com/thumb/msid-71771669,width-1200,height-900,resizemode-4,imgsize-257346/hyderabad-getty.jpg";         
             
-        }
-        function onGujarat(){                       smallImg.src="https://www.traveldailymedia.com/assets/2019/07/shutterstock_1035391615.jpg";         
+            }
+            function onGujarat(){                       
+                smallImg.src="https://www.traveldailymedia.com/assets/2019/07/shutterstock_1035391615.jpg";         
             
-        }
+            }
         
-    function imageSize(){
-        if(imgBox.className=="small"){
+            function imageSize(){
+                if(imgBox.className=="small"){
                         
-    imgBox.className="full";
-            menuIcon.innerHTML="&#9776";
-        }
-        else{
-            imgBox.className="small";
-            menuIcon.innerHTML="&#10006";
-        }
+                    imgBox.className="full";
+                    menuIcon.innerHTML="&#9776";
+                }
+                else{
+                    imgBox.className="small";
+                    menuIcon.innerHTML="&#10006";
+                }
         
-    }  
-    </script>
-    </body></html>
+            }  
+        </script>
+   </body>
+</html>
